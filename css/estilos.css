@@ -1,0 +1,445 @@
+
+/*Google Fons       recomendable realizar la importacion del mismo archivo .css */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+/*bootstrap Iconos*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+
+/*Para resetear*/
+*{
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+/*
+    outline: 1px solid red;
+*/
+
+
+    -webkit-box-sizing: border-box;
+
+}
+
+
+
+html,
+body{
+
+
+    /*Estilo 1 de parrafo*/
+font-family: "Roboto", serif;
+
+    background-color: var(--colorEstilo19);
+
+    /*desplazamieento suave cuando se usa navevacion por ancla*/
+    scroll-behavior: smooth;
+
+}
+
+
+/*Estilos generales*/
+:root{
+
+    --colorEstilo1:#000000;
+    --colorEstilo2:#020004;
+    --colorEstilo3:#1c1c1d;
+    --colorEstilo4:#212529;
+    --colorEstilo5:#222222;
+
+    --colorEstilo6:#2e2e2e;
+    --colorEstilo7:#333333;
+    --colorEstilo8:#3c3c3c;
+    --colorEstilo9:#403b3b;
+    --colorEstilo10:#5d5d5d;
+    --colorEstilo11:#4D4D4D;
+    --colorEstilo12:#888888;
+
+    --colorEstilo13:#ababab;
+    --colorEstilo14:#cccccc;
+    --colorEstilo15:#d1cebd;
+    
+    --colorEstilo16:#eeeeee;
+    --colorEstilo17:#efefef;
+    --colorEstilo18:#F9F9F9;
+    --colorEstilo19:#ffffff;
+    --colorEstilo20:#e6ebff;
+    --colorEstilo21: #F8F9FA;
+    --colorEstilo22:#f57b51;
+
+}
+
+
+/*Estilos genraels*/
+h1{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--colorEstilo22);
+
+    text-transform: capitalize;
+}
+
+h2{
+    font-size: 4.5rem;    
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 1.1rem;
+}
+
+h5{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+a:hover{
+    font-weight: 400;
+    transition: all 0.3s ease-in;    
+}
+
+
+div.fila__botones a.btn{
+    padding: 18px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    margin-top: 30px;
+
+}
+
+div.fila__botones a.btn--light{
+    background-color: hsla(0, 0%, 80%, 0.15);
+    color: var(--colorEstilo18);
+}
+
+
+p{
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+    margin: 10px 0;
+    color: var(--colorEstilo12);
+    font-weight: 300;    
+}
+
+
+/*contenedor*/
+div.contenedor{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 10px;
+
+    overflow: auto; /********************************/
+}
+
+
+/*contenedor__header*/
+header.contenedor__header{
+    background-image: url("../imagenes/background.jpg");    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+}
+
+
+nav.contenedor__superior div.contenedor div.superior__logo{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+div.superior__logo h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+section.contenedor__banner div.contenedor{
+    padding-top: 100px;
+    
+    padding-bottom: 10px;
+    
+}
+section.contenedor__banner div.contenedor h2 {
+    color: var(--colorEstilo17);
+}
+
+section.contenedor__banner div.contenedor p {
+    color: var(--colorEstilo17);
+    width: 55%;
+    font-size: 1.2rem;
+
+    margin: 20px 0;
+}
+
+
+section.contenedor__banner div.contenedor div.grupo{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 250px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+form input{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff00;
+    border: 1px solid var(--colorEstilo19);
+}
+
+form div.form__group .form__control{
+    color: var(--colorEstilo19);
+    width: 300px;
+}
+
+button.btn{
+    padding: 0 20px; 
+    background-color: #ffffff00;   
+    color: var(--colorEstilo19);
+    border-radius: 5px;
+}
+
+button.btn__greeen{
+    background-color: #008000;
+    border: none;
+    font-weight: bold;
+}
+button.btn__greeen:hover{
+    background-color: #076d08;
+    transition: all 0.3s ease-in;
+}
+
+
+div.grupo div.lado2 {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+}
+
+
+div.lado2 div.redsocial__iconos{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+
+div.lado2 div.redsocial__iconos a img{
+    width: 35px;
+    padding: 9px;
+    background-color: var(--colorEstilo12);
+    border-radius: 50%;
+}
+
+div.lado2 div.redsocial__iconos a img:hover{
+    background-color: hsla(0, 0%, 80%, 0.15);
+    transition: all 0.3s ease-in;
+}
+
+
+
+div.lado2 div.redsocial__autor p.autor1{
+    font-size: 0.8rem;
+    margin-top: 5px;    
+}
+
+
+
+
+
+
+
+/*contenedor__footer*/
+footer.contenedor__footerautor{
+    background-color: var(--colorEstilo1);
+}
+
+div.pie__titulo p{
+    text-align: center;
+    font-size: 11px;
+    padding: 10px 0;
+    margin: 10px 0;
+
+    color: var(--colorEstilo18);
+}
+
+span.autor
+{
+    color: var(--colorEstilo18);
+    font-weight: 600;
+}
+
+
+span.donacion a
+{
+    color: var(--colorEstilo18);
+    font-weight: 600;
+}
+
+
+span.donacion a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 601px){
+    section.contenedor__banner div.contenedor{
+    
+        padding-bottom: 10px;
+        
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    section.contenedor__banner div.contenedor h2 {
+        font-size: 3.5rem;  
+    }
+
+    section.contenedor__banner div.contenedor p{
+        font-size: 1rem;
+    }
+
+    section.contenedor__banner div.contenedor div.grupo {
+        display: flex;
+        flex-direction: column;
+        gap: 220px;
+    }
+
+    header.contenedor__header{
+        height: 100%;
+    }
+
+    section.contenedor__banner div.contenedor {
+        padding: 50px 10px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    section.contenedor__banner div.contenedor h2 {
+        font-size: 2.5rem;  
+    }
+
+    section.contenedor__banner div.contenedor p{
+        font-size: 1rem;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;        
+    }
+
+    form div.form__group .form__control{
+        width: 250px;
+    }
+
+    form button.btn{
+        width: 250px;
+        padding: 10px 0;
+    }
+
+
+    header.contenedor__header{
+        height: 100%;
+    }
+
+    section.contenedor__banner div.contenedor {
+        padding: 50px 10px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 320px){
+
+    section.contenedor__banner div.contenedor {
+        padding: 50px 10px;
+    }
+
+    form div.form__group .form__control{
+        width: 250px;
+    }
+
+    form button.btn{
+        width: 250px;
+        padding: 10px 0;
+    }
+
+    section.contenedor__banner div.contenedor p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    form div.form__group .form__control{
+        width: 90%;
+    }
+
+    form button.btn{
+        width: 90%;
+        padding: 10px 0;
+    }
+
+    div.lado2 div.redsocial__iconos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+
+
